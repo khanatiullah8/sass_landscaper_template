@@ -1,0 +1,62 @@
+/* common styling for all starts here */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html { scroll-behavior: smooth; }
+span { display: inline-block; }
+a { transition: all .3s; }
+
+input[type],
+textarea {
+  outline: none;
+}
+
+::first-letter { text-transform: uppercase; }
+p { line-height: 1.5; }
+
+.button {
+  padding: 17px 21px;
+  border-top: 1px solid $clr-white;
+  border-bottom: 1px solid $clr-white;
+  border-radius: 5px;
+  background-color: $clr-green2;
+  color: $clr-white;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.button:hover { background-color: $clr-green3; }
+
+.section-sub-title {
+  color: $clr-grey3;
+  font-size: 19px;
+}
+
+.section-title {
+  margin-bottom: 38px;
+  position: relative;
+  color: $clr-grey4;
+  font-size: 36px;
+  font-weight: 600;
+  text-transform: capitalize;
+  word-spacing: 1px;
+}
+
+.section-title::before {
+  content: '';
+  width: 70px;
+  height: 3px;
+  position: absolute;
+  top: 140%;
+  left: 50%;
+  background-color: $clr-green2;
+  transform: translateX(-50%);
+}
+
+/* common styling for all ends here */
